@@ -1,0 +1,32 @@
+<head>
+</head>
+<body>
+<span id="totalSecond">春节快乐！过去这一年可发生了很多事。21年没有离开中国的我，在这一年中先后去了美国、新加坡和马来西亚，经历了四个月与祖国相距9000km的生活。去年的春节，我和小伙伴们在Berkeley租的房子里，炖了一大锅从中国超市里买来的丸子，还吃了我精hei心an烤liao制li的披萨。</span>
+ 
+<script language="javascript" type="text/javascript"> 
+var second = 5; 
+var n = 0;
+n = Math.floor(Math.random()*41)+1;
+var num = n.toString();
+var words = new Array();
+words[5]='我真正地开始接触经济学的科研，写了三四篇essay，虽然也不过是些简陋的idea，不过探索发现也是很有乐趣的。我也做了一些经济学科普的工作，在知乎上答了很多题，还开了个微信公众号，给4字班小朋友们的经原小论文答疑。'
+words[4]='不过，我觉得最重要的，还是我想明白了一个问题：我该怎么改变世界呢？虽然我希望有一天能够拿到诺贝尔奖，但是那毕竟还是太遥远了。偶然之间，我发现了Hexo这个东西，简单来说，它是一种完全免费的自助式搭建博客的软件。'
+words[3]='于是，我用Hexo在Github上搭建了自己的博客【盗泉】，然后把我之前在知乎，Lofter，人人还有公众号上写的东西，也一点一点地搬到新的博客里。这个博客应该将会伴随我很长的时间，希望我能够把它积累成一个很棒的博客。'
+words[2]='是的，我找到的这个答案就是——积累。在这个世界上，本身就很特别的人，或者本身就很特别的事，其实是很少的。但是，有些很普通的事，如果能够坚持很长的时间，本身也就变得不普通了吧。'
+words[1]='从2015年年底开始，我启动了一项新的积累——【猎闲集】。作为【盗泉】的故事版，我会每天整理一个故事，唯一标准是不为人所知而有趣味（抑或恶趣味）。截至今天，我已经收集了41个故事，未来也将不断进行下去。'
+words[0]='下面这个故事，作为新春礼物送给你，希望你能喜欢~（点击左上角，有我的博客的链接，也请多指教啦！）'
+
+setInterval("redirect()", 10000); 
+function redirect() { 
+if (second < 0) { 
+    location.href = num; 
+} else { 
+    if (navigator.appName.indexOf("Explorer") > -1) { 
+        document.getElementById('totalSecond').innerText = words[second--]; 
+    } else { 
+        document.getElementById('totalSecond').textContent = words[second--]; 
+    } 
+} 
+} 
+</script>
+</body>
